@@ -3,526 +3,458 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Bamboo Hair & Spa | Spa, masajes y salón de belleza en la Zona Hotelera de Cancún</title>
-<meta name="description" content="El spa #1 de Cancún según TripAdvisor. Masajes, faciales, fish therapy, salón de belleza y más. Tres sucursales en la Zona Hotelera. Abierto todos los días de 8:00 a 22:00.">
+<title>Bamboo Hair & Spa | El spa #1 de Cancún según TripAdvisor · Zona Hotelera</title>
+<meta name="description" content="Masajes, fish therapy, salón de belleza, manicure y más. El spa mejor calificado de Cancún, con 3 sucursales en la Zona Hotelera. Abierto todos los días de 8:00 a 22:00.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="icon" href="https://bamboo-spa-hair.com/wp-content/uploads/2020/04/cropped-Logo-1-1-180x180.jpg">
 <style>
   :root {
-    --primary: #a4c43a;
-    --primary-dark: #2d6e35;
-    --primary-light: #cfe18a;
-    --accent: #e8f3cf;
-    --bg: #ffffff;
-    --bg-alt: #f6f9ed;
-    --ink: #22301c;
-    --muted: #68755b;
-    --white: #ffffff;
-    --radius: 14px;
-    --shadow: 0 4px 24px rgba(45, 110, 53, 0.10);
-    --shadow-hover: 0 10px 36px rgba(45, 110, 53, 0.18);
+    --lime: oklch(0.78 0.16 122);          /* verde bambú de marca */
+    --lime-bright: oklch(0.85 0.18 124);
+    --forest: oklch(0.42 0.1 145);          /* verde bosque del logo */
+    --forest-deep: oklch(0.3 0.07 145);
+    --cream: oklch(0.98 0.01 120);          /* neutro entintado al verde */
+    --sand: oklch(0.95 0.02 115);
+    --ink: oklch(0.25 0.03 140);
+    --ink-soft: oklch(0.45 0.03 140);
+    --white: oklch(0.99 0.005 120);
+    --turquoise: oklch(0.75 0.12 200);      /* del agua de fish therapy */
   }
   * { margin: 0; padding: 0; box-sizing: border-box; }
   html { scroll-behavior: smooth; }
   body {
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Hanken Grotesk', sans-serif;
     color: var(--ink);
-    background: var(--bg);
-    line-height: 1.65;
-    font-size: 16px;
+    background: var(--cream);
+    line-height: 1.6;
+    font-size: 17px;
   }
-  h1, h2, h3, h4 { font-family: 'Quicksand', sans-serif; font-weight: 700; line-height: 1.2; }
-  h1 { font-size: clamp(2.2rem, 5.5vw, 3.6rem); }
-  h2 { font-size: clamp(1.8rem, 4vw, 2.6rem); }
-  h3 { font-size: 1.25rem; }
+  h1, h2, h3 { font-family: 'Bricolage Grotesque', sans-serif; line-height: 1.05; font-weight: 800; letter-spacing: -0.02em; }
   img { max-width: 100%; display: block; }
-  a { color: var(--primary-dark); }
-  .container { max-width: 1140px; margin: 0 auto; padding: 0 24px; }
-  section { padding: 5rem 0; }
-  .section-tag {
-    display: inline-block; font-family: 'Quicksand', sans-serif; font-weight: 600;
-    font-size: 0.85rem; letter-spacing: 0.14em; text-transform: uppercase;
-    color: var(--primary-dark); background: var(--accent);
-    padding: 6px 16px; border-radius: 100px; margin-bottom: 1rem;
-  }
-  .section-head { text-align: center; max-width: 640px; margin: 0 auto 3.5rem; }
-  .section-head p { color: var(--muted); margin-top: 0.75rem; font-size: 1.05rem; }
+  a { color: inherit; }
+  .wrap { max-width: 1200px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 48px); }
 
-  /* ===== Header ===== */
+  /* ============ Header ============ */
   header {
     position: sticky; top: 0; z-index: 100;
-    background: rgba(255, 255, 255, 0.96); backdrop-filter: blur(8px);
-    border-bottom: 1px solid var(--accent);
+    background: color-mix(in oklch, var(--cream) 92%, transparent);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid color-mix(in oklch, var(--lime) 30%, transparent);
   }
-  .nav {
-    display: flex; align-items: center; justify-content: space-between;
-    padding: 14px 24px; max-width: 1140px; margin: 0 auto;
-  }
+  .nav { display: flex; align-items: center; justify-content: space-between; padding: 14px clamp(20px, 4vw, 48px); max-width: 1200px; margin: 0 auto; }
   .nav-brand { display: flex; align-items: center; gap: 12px; text-decoration: none; }
-  .nav-brand img { width: 48px; height: 48px; border-radius: 10px; object-fit: cover; }
-  .nav-brand span {
-    font-family: 'Quicksand', sans-serif; font-weight: 700; font-size: 1.15rem;
-    color: var(--ink); letter-spacing: -0.01em;
-  }
-  .nav-links { display: flex; align-items: center; gap: 28px; list-style: none; }
-  .nav-links a {
-    text-decoration: none; color: var(--ink); font-weight: 600; font-size: 0.95rem;
-    transition: color 0.2s;
-  }
-  .nav-links a:hover { color: var(--primary-dark); }
-  .nav-cta {
-    background: var(--primary-dark); color: var(--white) !important;
-    padding: 10px 22px; border-radius: 100px; transition: background 0.2s, transform 0.2s;
-  }
-  .nav-cta:hover { background: #235829; transform: translateY(-1px); }
+  .nav-brand img { width: 46px; height: 46px; border-radius: 12px; }
+  .nav-brand strong { font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 1.2rem; }
+  .nav-links { display: flex; align-items: center; gap: clamp(16px, 3vw, 36px); list-style: none; }
+  .nav-links a { text-decoration: none; font-weight: 600; font-size: 0.95rem; }
+  .nav-links a:not(.nav-cta):hover { color: var(--forest); }
+  .nav-cta { background: var(--ink); color: var(--cream) !important; padding: 11px 24px; border-radius: 100px; transition: transform 0.2s ease-out, background 0.2s; }
+  .nav-cta:hover { background: var(--forest); transform: translateY(-1px); }
   .nav-toggle { display: none; }
 
-  /* ===== Hero ===== */
-  .hero { padding: 0; background: var(--bg-alt); overflow: hidden; }
-  .hero-grid {
-    display: grid; grid-template-columns: 1.1fr 1fr; gap: 3rem; align-items: center;
-    max-width: 1140px; margin: 0 auto; padding: 4.5rem 24px;
+  /* ============ Hero: full-bleed photo ============ */
+  .hero {
+    position: relative; min-height: 92vh;
+    display: flex; align-items: flex-end;
+    background:
+      linear-gradient(to top, oklch(0.2 0.06 145 / 0.92) 0%, oklch(0.25 0.06 145 / 0.35) 45%, oklch(0.3 0.05 145 / 0.15) 100%),
+      url('https://bamboo-spa-hair.com/wp-content/uploads/2019/03/massage.jpg') center 30% / cover no-repeat;
   }
-  .hero-badge {
-    display: inline-flex; align-items: center; gap: 8px;
-    background: var(--white); border: 1.5px solid var(--primary);
-    color: var(--primary-dark); font-weight: 700; font-size: 0.88rem;
-    padding: 8px 18px; border-radius: 100px; margin-bottom: 1.5rem;
+  .hero-inner { position: relative; width: 100%; padding-bottom: clamp(48px, 8vh, 96px); color: var(--cream); }
+  .hero-rank {
+    display: inline-flex; align-items: center; gap: 10px;
+    background: var(--lime); color: var(--ink);
+    font-weight: 700; font-size: 0.95rem;
+    padding: 10px 22px; border-radius: 100px;
+    margin-bottom: clamp(20px, 3vh, 32px);
   }
-  .hero h1 { color: var(--ink); margin-bottom: 1.25rem; }
-  .hero h1 em { font-style: normal; color: var(--primary-dark); }
-  .hero p { color: var(--muted); font-size: 1.15rem; margin-bottom: 2rem; max-width: 480px; }
-  .hero-actions { display: flex; gap: 14px; flex-wrap: wrap; }
-  .btn-primary {
-    display: inline-block; background: var(--primary-dark); color: var(--white);
-    font-family: 'Quicksand', sans-serif; font-weight: 700; font-size: 1rem;
-    padding: 16px 34px; border-radius: 100px; text-decoration: none;
-    transition: background 0.2s, transform 0.2s, box-shadow 0.2s;
-    box-shadow: var(--shadow);
+  .hero h1 {
+    font-size: clamp(2.8rem, 8vw, 6.5rem);
+    max-width: 14ch;
+    margin-bottom: clamp(20px, 3vh, 28px);
   }
-  .btn-primary:hover { background: #235829; transform: translateY(-2px); box-shadow: var(--shadow-hover); }
-  .btn-secondary {
-    display: inline-block; background: var(--white); color: var(--primary-dark);
-    font-family: 'Quicksand', sans-serif; font-weight: 700; font-size: 1rem;
-    padding: 16px 34px; border-radius: 100px; text-decoration: none;
-    border: 1.5px solid var(--primary); transition: background 0.2s, transform 0.2s;
+  .hero h1 .lime { color: var(--lime-bright); }
+  .hero p { font-size: clamp(1.05rem, 2vw, 1.35rem); max-width: 52ch; margin-bottom: clamp(28px, 4vh, 40px); color: oklch(0.93 0.02 120); }
+  .hero-actions { display: flex; gap: 16px; flex-wrap: wrap; align-items: center; }
+  .btn-lime {
+    display: inline-block; background: var(--lime); color: var(--ink);
+    font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: 1.05rem;
+    padding: 18px 40px; border-radius: 100px; text-decoration: none;
+    transition: transform 0.2s ease-out, box-shadow 0.2s ease-out;
   }
-  .btn-secondary:hover { background: var(--accent); transform: translateY(-2px); }
-  .hero-img-wrap { position: relative; }
-  .hero-img-wrap img {
-    border-radius: 24px; box-shadow: var(--shadow-hover);
-    width: 100%; height: 460px; object-fit: cover;
+  .btn-lime:hover { transform: translateY(-3px); box-shadow: 0 16px 40px oklch(0.78 0.16 122 / 0.4); }
+  .btn-ghost {
+    display: inline-block; color: var(--cream); font-weight: 600; font-size: 1.05rem;
+    padding: 18px 8px; text-decoration: none; border-bottom: 2px solid var(--lime);
+    transition: color 0.2s;
   }
-  .hero-float {
-    position: absolute; bottom: -20px; left: -20px;
-    background: var(--white); border-radius: var(--radius); box-shadow: var(--shadow);
-    padding: 16px 22px; display: flex; align-items: center; gap: 14px;
-  }
-  .hero-float strong { font-family: 'Quicksand', sans-serif; font-size: 1.5rem; color: var(--primary-dark); display: block; line-height: 1; }
-  .hero-float span { font-size: 0.85rem; color: var(--muted); }
+  .btn-ghost:hover { color: var(--lime-bright); }
 
-  /* ===== Trust strip ===== */
-  .trust { background: var(--primary-dark); padding: 2.25rem 0; }
-  .trust-grid {
-    display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 2rem; text-align: center;
-  }
-  .trust-item strong {
-    font-family: 'Quicksand', sans-serif; font-size: 1.9rem; font-weight: 700;
-    color: var(--white); display: block;
-  }
-  .trust-item span { color: var(--primary-light); font-size: 0.92rem; font-weight: 600; }
+  /* ============ Cinta de datos: bloque lima comprometido ============ */
+  .strip { background: var(--lime); color: var(--ink); padding: clamp(28px, 4vh, 44px) 0; }
+  .strip-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: clamp(20px, 3vw, 40px); }
+  .strip-item { border-left: none; }
+  .strip-item strong { font-family: 'Bricolage Grotesque', sans-serif; font-size: clamp(1.9rem, 3.5vw, 2.8rem); font-weight: 800; display: block; line-height: 1; }
+  .strip-item span { font-weight: 600; font-size: 0.95rem; color: oklch(0.35 0.06 140); }
 
-  /* ===== Services ===== */
-  .services { background: var(--bg); }
-  .services-grid {
-    display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem;
+  /* ============ Servicios: bento asimétrico con fotos reales ============ */
+  .services { padding: clamp(64px, 10vh, 120px) 0; }
+  .services-head { display: flex; justify-content: space-between; align-items: flex-end; gap: 24px; flex-wrap: wrap; margin-bottom: clamp(36px, 5vh, 56px); }
+  .services-head h2 { font-size: clamp(2.2rem, 5vw, 3.8rem); max-width: 16ch; }
+  .services-head p { color: var(--ink-soft); max-width: 38ch; font-size: 1.1rem; }
+  .bento {
+    display: grid; gap: 18px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-auto-rows: 220px;
   }
-  .service-card {
-    background: var(--bg-alt); border-radius: var(--radius); padding: 2rem;
-    transition: transform 0.25s, box-shadow 0.25s; border: 1px solid transparent;
+  .tile {
+    position: relative; border-radius: 20px; overflow: hidden;
+    display: flex; align-items: flex-end; text-decoration: none;
+    background: var(--sand);
   }
-  .service-card:hover { transform: translateY(-5px); box-shadow: var(--shadow-hover); border-color: var(--primary-light); }
-  .service-icon {
-    width: 52px; height: 52px; border-radius: 14px; background: var(--primary);
-    display: flex; align-items: center; justify-content: center; margin-bottom: 1.25rem;
+  .tile img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1); }
+  .tile:hover img { transform: scale(1.05); }
+  .tile-label {
+    position: relative; z-index: 2; width: 100%;
+    padding: 22px 24px;
+    background: linear-gradient(to top, oklch(0.2 0.05 145 / 0.85), transparent);
+    color: var(--cream);
   }
-  .service-icon svg { width: 26px; height: 26px; stroke: var(--white); fill: none; stroke-width: 2; }
-  .service-card h3 { margin-bottom: 0.5rem; color: var(--ink); }
-  .service-card p { color: var(--muted); font-size: 0.95rem; }
+  .tile-label h3 { font-size: 1.45rem; font-weight: 700; }
+  .tile-label p { font-size: 0.92rem; color: oklch(0.9 0.02 120); margin-top: 2px; }
+  .tile-1 { grid-column: span 7; grid-row: span 2; }
+  .tile-2 { grid-column: span 5; }
+  .tile-3 { grid-column: span 5; }
+  .tile-4 { grid-column: span 4; }
+  .tile-5 { grid-column: span 4; }
+  .tile-6 { grid-column: span 4; }
+  .tile-text {
+    background: var(--forest); color: var(--cream);
+    padding: 28px; align-items: flex-start; flex-direction: column; display: flex; justify-content: space-between;
+  }
+  .tile-text h3 { font-size: 1.45rem; }
+  .tile-text ul { list-style: none; margin-top: 14px; }
+  .tile-text li { padding: 5px 0; font-size: 0.98rem; color: oklch(0.9 0.03 130); }
+  .tile-text li::before { content: "— "; color: var(--lime-bright); }
 
-  /* ===== Gallery ===== */
-  .gallery { background: var(--bg-alt); }
-  .gallery-grid {
-    display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.25rem;
+  /* ============ Fish therapy: feature turquesa ============ */
+  .fish {
+    position: relative; min-height: 70vh;
+    display: flex; align-items: center;
+    background:
+      linear-gradient(100deg, oklch(0.25 0.06 200 / 0.9) 15%, oklch(0.3 0.08 200 / 0.3) 60%, transparent 100%),
+      url('https://bamboo-spa-hair.com/wp-content/uploads/2020/04/c8de4c34106e274d125f53230c034398_s.jpg') center / cover no-repeat;
+    color: var(--cream);
   }
-  .gallery-grid img {
-    width: 100%; height: 280px; object-fit: cover; border-radius: var(--radius);
-    transition: transform 0.3s, box-shadow 0.3s; box-shadow: var(--shadow);
-  }
-  .gallery-grid img:hover { transform: scale(1.025); box-shadow: var(--shadow-hover); }
+  .fish-inner { padding: clamp(64px, 10vh, 120px) 0; max-width: 560px; }
+  .fish-kicker { font-weight: 700; color: oklch(0.85 0.1 195); font-size: 1rem; margin-bottom: 16px; }
+  .fish h2 { font-size: clamp(2.4rem, 5.5vw, 4.2rem); margin-bottom: 20px; }
+  .fish p { font-size: 1.15rem; color: oklch(0.93 0.02 200); margin-bottom: 28px; }
+  .fish .btn-lime { background: var(--cream); color: var(--ink); }
 
-  /* ===== Team ===== */
-  .team-grid {
-    display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 1.25rem;
+  /* ============ Equipo + reseñas combinados ============ */
+  .voces { padding: clamp(64px, 10vh, 120px) 0; background: var(--sand); }
+  .voces-grid { display: grid; grid-template-columns: 5fr 7fr; gap: clamp(32px, 5vw, 72px); align-items: start; }
+  .voces h2 { font-size: clamp(2.2rem, 4.5vw, 3.4rem); margin-bottom: 18px; }
+  .voces-intro p { color: var(--ink-soft); font-size: 1.1rem; margin-bottom: 28px; }
+  .equipo { display: flex; flex-wrap: wrap; gap: 10px; }
+  .persona {
+    background: var(--white); border: 1.5px solid color-mix(in oklch, var(--lime) 40%, transparent);
+    padding: 10px 18px; border-radius: 100px; font-weight: 600; font-size: 0.95rem;
   }
-  .team-card {
-    background: var(--bg-alt); border-radius: var(--radius); padding: 1.75rem 1.25rem;
-    text-align: center; transition: transform 0.25s;
+  .persona span { color: var(--ink-soft); font-weight: 500; font-size: 0.85rem; }
+  .reviews { display: flex; flex-direction: column; gap: 16px; }
+  .review {
+    background: var(--white); border-radius: 20px; padding: 28px 32px;
+    box-shadow: 0 2px 16px oklch(0.4 0.05 140 / 0.06);
   }
-  .team-card:hover { transform: translateY(-4px); }
-  .team-avatar {
-    width: 64px; height: 64px; margin: 0 auto 1rem; border-radius: 50%;
-    background: var(--primary); color: var(--white);
-    font-family: 'Quicksand', sans-serif; font-weight: 700; font-size: 1.5rem;
-    display: flex; align-items: center; justify-content: center;
-  }
-  .team-card h3 { font-size: 1.05rem; }
-  .team-card p { color: var(--muted); font-size: 0.85rem; margin-top: 0.25rem; }
+  .review .stars { color: var(--forest); letter-spacing: 4px; font-size: 1rem; margin-bottom: 12px; }
+  .review blockquote { font-size: 1.05rem; line-height: 1.55; }
+  .review cite { display: block; margin-top: 14px; font-style: normal; font-weight: 600; font-size: 0.9rem; color: var(--ink-soft); }
 
-  /* ===== Reviews ===== */
-  .reviews { background: var(--bg-alt); }
-  .reviews-grid {
-    display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem;
+  /* ============ Sucursales: bloque verde comprometido ============ */
+  .sucursales { background: var(--forest-deep); color: var(--cream); padding: clamp(64px, 10vh, 120px) 0; }
+  .sucursales h2 { font-size: clamp(2.2rem, 5vw, 3.8rem); margin-bottom: 12px; }
+  .sucursales > .wrap > p { color: oklch(0.85 0.04 130); font-size: 1.15rem; margin-bottom: clamp(36px, 5vh, 56px); max-width: 50ch; }
+  .locs { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 18px; }
+  .loc {
+    background: oklch(0.36 0.07 145); border-radius: 20px; padding: 32px;
+    display: flex; flex-direction: column; gap: 8px;
+    transition: background 0.25s;
   }
-  .review-card {
-    background: var(--white); border-radius: var(--radius); padding: 2rem;
-    box-shadow: var(--shadow); display: flex; flex-direction: column; gap: 1rem;
-  }
-  .review-stars { color: var(--primary-dark); font-size: 1.1rem; letter-spacing: 3px; }
-  .review-card blockquote { color: var(--ink); font-size: 0.98rem; flex: 1; }
-  .review-card cite {
-    font-style: normal; color: var(--muted); font-size: 0.88rem; font-weight: 600;
-  }
+  .loc:hover { background: oklch(0.4 0.08 145); }
+  .loc h3 { font-size: 1.35rem; color: var(--lime-bright); }
+  .loc p { color: oklch(0.88 0.03 130); font-size: 0.98rem; }
+  .loc .loc-meta { margin-top: 10px; padding-top: 16px; border-top: 1px solid oklch(0.5 0.06 140); display: flex; flex-direction: column; gap: 6px; }
+  .loc a { color: var(--cream); font-weight: 700; text-decoration: none; }
+  .loc a:hover { color: var(--lime-bright); }
+  .loc .map-link { font-size: 0.92rem; font-weight: 600; color: var(--lime-bright); text-decoration: underline; text-underline-offset: 3px; }
 
-  /* ===== Locations ===== */
-  .locations-grid {
-    display: grid; grid-template-columns: repeat(auto-fit, minmax(290px, 1fr)); gap: 1.5rem;
+  /* ============ CTA final ============ */
+  .final { background: var(--lime); color: var(--ink); padding: clamp(72px, 12vh, 140px) 0; text-align: left; }
+  .final-grid { display: flex; justify-content: space-between; align-items: center; gap: 32px; flex-wrap: wrap; }
+  .final h2 { font-size: clamp(2.4rem, 6vw, 4.5rem); max-width: 18ch; }
+  .final .btn-dark {
+    display: inline-block; background: var(--ink); color: var(--cream);
+    font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: 1.1rem;
+    padding: 20px 44px; border-radius: 100px; text-decoration: none; white-space: nowrap;
+    transition: transform 0.2s ease-out, box-shadow 0.2s ease-out;
   }
-  .location-card {
-    border: 1.5px solid var(--accent); border-radius: var(--radius); padding: 2rem;
-    transition: border-color 0.25s, box-shadow 0.25s;
-  }
-  .location-card:hover { border-color: var(--primary); box-shadow: var(--shadow); }
-  .location-card h3 { color: var(--primary-dark); margin-bottom: 0.75rem; }
-  .location-card p { color: var(--muted); font-size: 0.95rem; margin-bottom: 0.4rem; }
-  .location-card .loc-phone {
-    display: inline-block; margin-top: 0.75rem; font-weight: 700; color: var(--ink);
-    text-decoration: none;
-  }
-  .location-card .loc-phone:hover { color: var(--primary-dark); }
+  .final .btn-dark:hover { transform: translateY(-3px); box-shadow: 0 16px 40px oklch(0.25 0.05 140 / 0.35); }
+  .final-sub { margin-top: 14px; font-weight: 600; color: oklch(0.35 0.06 140); }
 
-  /* ===== Contact ===== */
-  .contact { background: var(--primary-dark); color: var(--white); }
-  .contact .section-tag { background: rgba(255,255,255,0.12); color: var(--primary-light); }
-  .contact h2 { color: var(--white); }
-  .contact .section-head p { color: var(--primary-light); }
-  .contact-grid {
-    display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 2rem; max-width: 900px; margin: 0 auto;
-  }
-  .contact-card {
-    background: rgba(255,255,255,0.08); border-radius: var(--radius); padding: 2rem;
-    text-align: center;
-  }
-  .contact-card h3 { color: var(--primary-light); font-size: 1rem; margin-bottom: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em; }
-  .contact-card p, .contact-card a { color: var(--white); font-size: 1.05rem; text-decoration: none; font-weight: 600; }
-  .contact-card a:hover { text-decoration: underline; }
-  .contact-cta { text-align: center; margin-top: 3rem; }
-  .contact-cta .btn-primary { background: var(--primary); color: var(--ink); }
-  .contact-cta .btn-primary:hover { background: var(--primary-light); }
-
-  /* ===== Footer ===== */
-  footer { background: var(--ink); color: rgba(255,255,255,0.75); padding: 2.5rem 0; }
-  .footer-grid {
-    display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1.5rem;
-  }
-  .footer-brand { display: flex; align-items: center; gap: 10px; }
-  .footer-brand img { width: 38px; height: 38px; border-radius: 8px; }
-  .footer-brand span { font-family: 'Quicksand', sans-serif; font-weight: 700; color: var(--white); }
-  footer p { font-size: 0.85rem; }
-  footer a { color: var(--primary-light); text-decoration: none; }
+  /* ============ Footer ============ */
+  footer { background: var(--ink); color: oklch(0.75 0.02 130); padding: 40px 0; font-size: 0.92rem; }
+  .foot { display: flex; justify-content: space-between; align-items: center; gap: 20px; flex-wrap: wrap; }
+  .foot-brand { display: flex; align-items: center; gap: 10px; color: var(--cream); font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; }
+  .foot-brand img { width: 36px; height: 36px; border-radius: 9px; }
+  footer a { color: var(--lime-bright); text-decoration: none; }
   footer a:hover { text-decoration: underline; }
 
-  /* ===== WhatsApp float ===== */
-  .wa-float {
+  /* ============ WhatsApp flotante ============ */
+  .wa {
     position: fixed; bottom: 24px; right: 24px; z-index: 99;
     width: 60px; height: 60px; border-radius: 50%;
     background: #25D366; display: flex; align-items: center; justify-content: center;
-    box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
-    transition: transform 0.25s;
+    box-shadow: 0 8px 28px oklch(0.7 0.2 150 / 0.45);
+    transition: transform 0.25s ease-out;
   }
-  .wa-float:hover { transform: scale(1.08); }
-  .wa-float svg { width: 32px; height: 32px; fill: var(--white); }
+  .wa:hover { transform: scale(1.1); }
+  .wa svg { width: 32px; height: 32px; fill: #fff; }
 
-  /* ===== Responsive ===== */
-  @media (max-width: 860px) {
-    .hero-grid { grid-template-columns: 1fr; padding: 3rem 24px; }
-    .hero-img-wrap img { height: 320px; }
-    .hero-float { left: 12px; bottom: -16px; }
+  /* ============ Responsive ============ */
+  @media (max-width: 920px) {
+    .bento { grid-template-columns: repeat(6, 1fr); grid-auto-rows: 200px; }
+    .tile-1 { grid-column: span 6; grid-row: span 2; }
+    .tile-2, .tile-3 { grid-column: span 3; }
+    .tile-4, .tile-5, .tile-6 { grid-column: span 6; }
+    .voces-grid { grid-template-columns: 1fr; }
+  }
+  @media (max-width: 680px) {
     .nav-links { display: none; }
-    .nav-toggle {
-      display: block; background: none; border: none; cursor: pointer; padding: 8px;
-    }
-    .nav-toggle svg { width: 26px; height: 26px; stroke: var(--ink); }
     .nav-links.open {
       display: flex; flex-direction: column; position: absolute; top: 100%; left: 0; right: 0;
-      background: var(--white); padding: 1.5rem 24px; gap: 1.25rem;
-      border-bottom: 1px solid var(--accent); box-shadow: var(--shadow);
+      background: var(--cream); padding: 24px; gap: 18px;
+      border-bottom: 1px solid color-mix(in oklch, var(--lime) 40%, transparent);
     }
-    section { padding: 3.5rem 0; }
+    .nav-toggle { display: block; background: none; border: none; cursor: pointer; padding: 8px; }
+    .nav-toggle svg { width: 26px; height: 26px; stroke: var(--ink); }
+    .hero { min-height: 88vh; }
+    .bento { grid-template-columns: 1fr; grid-auto-rows: 240px; }
+    .tile-1, .tile-2, .tile-3, .tile-4, .tile-5, .tile-6 { grid-column: span 1; grid-row: span 1; }
+    .tile-text { grid-row: span 2; }
   }
 </style>
 </head>
 <body>
 
-<!-- ===== Header ===== -->
 <header>
   <nav class="nav">
     <a href="#" class="nav-brand">
-      <img src="https://bamboo-spa-hair.com/wp-content/uploads/2020/04/cropped-Logo-1-1-180x180.jpg" alt="Bamboo Hair & Spa logo">
-      <span>Bamboo Hair & Spa</span>
+      <img src="https://bamboo-spa-hair.com/wp-content/uploads/2020/04/cropped-Logo-1-1-180x180.jpg" alt="Logo de Bamboo Hair & Spa">
+      <strong>Bamboo Hair & Spa</strong>
     </a>
     <ul class="nav-links" id="navLinks">
       <li><a href="#servicios">Servicios</a></li>
-      <li><a href="#galeria">Galería</a></li>
+      <li><a href="#fish">Fish Therapy</a></li>
       <li><a href="#equipo">Equipo</a></li>
       <li><a href="#sucursales">Sucursales</a></li>
       <li><a href="tel:+529988830106" class="nav-cta">998 883 0106</a></li>
     </ul>
     <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">
-      <svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
     </button>
   </nav>
 </header>
 
-<!-- ===== Hero ===== -->
+<!-- Hero: foto real a sangre completa -->
 <section class="hero">
-  <div class="hero-grid">
-    <div>
-      <div class="hero-badge">★ Spa #1 en Cancún según TripAdvisor</div>
-      <h1>Relájate en el corazón de la <em>Zona Hotelera</em></h1>
-      <p>Masajes, faciales, fish therapy y salón de belleza con el equipo mejor calificado de Cancún. Tres sucursales, abiertas todos los días.</p>
-      <div class="hero-actions">
-        <a href="https://wa.me/5219981202541" class="btn-primary">Reservar por WhatsApp</a>
-        <a href="#servicios" class="btn-secondary">Ver servicios</a>
+  <div class="wrap hero-inner">
+    <div class="hero-rank">★ Spa #1 de Cancún en TripAdvisor</div>
+    <h1>Sal de tu hotel.<br>Entra a <span class="lime">otro mundo.</span></h1>
+    <p>Masajes, fish therapy, salón de belleza y manicure a pasos de tu hotel en la Zona Hotelera. Sin cita, todos los días, de 8 de la mañana a 10 de la noche.</p>
+    <div class="hero-actions">
+      <a href="https://wa.me/5219981202541" class="btn-lime">Reservar por WhatsApp</a>
+      <a href="#servicios" class="btn-ghost">Ver servicios</a>
+    </div>
+  </div>
+</section>
+
+<!-- Cinta de datos -->
+<div class="strip">
+  <div class="wrap strip-grid">
+    <div class="strip-item"><strong>#1</strong><span>Spa de Cancún en TripAdvisor</span></div>
+    <div class="strip-item"><strong>4.7 ★</strong><span>475 reseñas en Google</span></div>
+    <div class="strip-item"><strong>3</strong><span>sucursales en la Zona Hotelera</span></div>
+    <div class="strip-item"><strong>8–22 h</strong><span>abierto todos los días</span></div>
+  </div>
+</div>
+
+<!-- Servicios: bento con fotos reales -->
+<section class="services" id="servicios">
+  <div class="wrap">
+    <div class="services-head">
+      <h2>Lo que tu cuerpo te está pidiendo</h2>
+      <p>Todos los servicios con productos profesionales y el equipo mejor calificado de la zona.</p>
+    </div>
+    <div class="bento">
+      <a href="https://wa.me/5219981202541" class="tile tile-1">
+        <img src="https://bamboo-spa-hair.com/wp-content/uploads/2019/03/massage.jpg" alt="Masaje sueco con piedras calientes en Bamboo Spa Cancún">
+        <div class="tile-label">
+          <h3>Masajes</h3>
+          <p>Sueco · tejido profundo · piedras calientes · en pareja</p>
+        </div>
+      </a>
+      <a href="https://wa.me/5219981202541" class="tile tile-2">
+        <img src="https://bamboo-spa-hair.com/wp-content/uploads/2019/03/heair-salon-spa.jpg" alt="Corte y peinado en el salón de belleza Bamboo">
+        <div class="tile-label">
+          <h3>Salón de belleza</h3>
+          <p>Corte · color · peinado</p>
+        </div>
+      </a>
+      <a href="https://wa.me/5219981202541" class="tile tile-3">
+        <img src="https://bamboo-spa-hair.com/wp-content/uploads/2019/03/hands-manicure.jpg" alt="Manicure profesional con esmaltado">
+        <div class="tile-label">
+          <h3>Manicure y pedicure</h3>
+          <p>Acrílicas · gelish · pedicure deluxe</p>
+        </div>
+      </a>
+      <a href="https://wa.me/5219981202541" class="tile tile-4">
+        <img src="https://bamboo-spa-hair.com/wp-content/uploads/2019/03/hair-wedding-spa.jpg" alt="Peinado de novia para boda en la playa">
+        <div class="tile-label">
+          <h3>Bodas y eventos</h3>
+          <p>Peinado y maquillaje para tu día</p>
+        </div>
+      </a>
+      <a href="https://wa.me/5219981202541" class="tile tile-5">
+        <img src="https://bamboo-spa-hair.com/wp-content/uploads/2020/03/waxing-CMYK-300-dpi.jpg" alt="Depilación profesional con cera premium">
+        <div class="tile-label">
+          <h3>Depilación</h3>
+          <p>Cera premium para todo tipo de piel</p>
+        </div>
+      </a>
+      <div class="tile tile-6 tile-text">
+        <h3>Y además</h3>
+        <ul>
+          <li>Faciales hidratantes y antiedad</li>
+          <li>Tratamientos corporales</li>
+          <li>Exfoliaciones y envolturas</li>
+          <li>Paquetes para grupos</li>
+        </ul>
       </div>
     </div>
-    <div class="hero-img-wrap">
-      <img src="https://bamboo-spa-hair.com/wp-content/uploads/2019/03/massage.jpg" alt="Masaje relajante en Bamboo Hair & Spa Cancún">
-      <div class="hero-float">
-        <div>
-          <strong>4.7</strong>
-          <span>475 reseñas en Google</span>
+  </div>
+</section>
+
+<!-- Fish therapy: el diferenciador -->
+<section class="fish" id="fish">
+  <div class="wrap">
+    <div class="fish-inner">
+      <p class="fish-kicker">La experiencia que nadie más tiene</p>
+      <h2>Fish Therapy</h2>
+      <p>Cientos de pececitos garra rufa exfolian tu piel de forma natural mientras te relajas. La experiencia más buscada por nuestros visitantes, con una sucursal dedicada en Plaza Terramar.</p>
+      <a href="https://wa.me/5219981202541" class="btn-lime">Quiero probarlo</a>
+    </div>
+  </div>
+</section>
+
+<!-- Equipo + reseñas reales -->
+<section class="voces" id="equipo">
+  <div class="wrap voces-grid">
+    <div class="voces-intro">
+      <h2>Las manos detrás de las 5 estrellas</h2>
+      <p>Nuestros visitantes no solo regresan: regresan preguntando por su terapeuta. Estos son los nombres que se repiten en las reseñas.</p>
+      <div class="equipo">
+        <div class="persona">Vivi <span>· masaje</span></div>
+        <div class="persona">Jessica <span>· masaje</span></div>
+        <div class="persona">Miriam <span>· masaje</span></div>
+        <div class="persona">Abel <span>· faciales</span></div>
+        <div class="persona">Katrina <span>· uñas</span></div>
+        <div class="persona">Paty <span>· pedicure</span></div>
+      </div>
+    </div>
+    <div class="reviews">
+      <div class="review">
+        <div class="stars">★★★★★</div>
+        <blockquote>"Wonderful day was made even better after we got our couples massage! The place was very clean and the staff was kind and welcoming!"</blockquote>
+        <cite>Visitante · TripAdvisor (reseña verificada)</cite>
+      </div>
+      <div class="review">
+        <div class="stars">★★★★★</div>
+        <blockquote>"My favorite part of my experience was the facial. It was my first time and Abel did a wonderful job. I loved everything from massage to facial and fish therapy!"</blockquote>
+        <cite>Visitante · TripAdvisor (reseña verificada)</cite>
+      </div>
+      <div class="review">
+        <div class="stars">★★★★★</div>
+        <blockquote>"My nail technician, Katrina, did such a wonderful job on my acrylics. It was relaxing and really well done. 10/10 would recommend."</blockquote>
+        <cite>Visitante · TripAdvisor (reseña verificada)</cite>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Sucursales -->
+<section class="sucursales" id="sucursales">
+  <div class="wrap">
+    <h2>Tres puertas al descanso</h2>
+    <p>Estés en el hotel que estés en la Zona Hotelera, hay un Bamboo a unos pasos. Sin cita previa.</p>
+    <div class="locs">
+      <div class="loc">
+        <h3>Plaza Terramar · Local 6</h3>
+        <p>Blvd. Kukulcán km 8.5, Zona Hotelera, Cancún, Q.R. 77500. Frente al Hotel Riu Palace Las Américas.</p>
+        <div class="loc-meta">
+          <span>Lunes a domingo · 8:00 – 22:00</span>
+          <a href="tel:+529988830106">998 883 0106</a>
+          <a class="map-link" href="https://maps.google.com/?q=Bamboo+Hair+%26+Spa+Plaza+Terramar+Local+6+Cancun" target="_blank" rel="noopener">Ver en Google Maps</a>
+        </div>
+      </div>
+      <div class="loc">
+        <h3>Plaza Terramar · Local 17</h3>
+        <p>La casa del fish therapy y pedicure. A unos metros del Local 6, misma plaza.</p>
+        <div class="loc-meta">
+          <span>Lunes a domingo · 8:00 – 22:00</span>
+          <a href="tel:+529988830486">998 883 0486</a>
+          <a class="map-link" href="https://maps.google.com/?q=Bamboo+Spa+Fish+Therapy+Plaza+Terramar+Cancun" target="_blank" rel="noopener">Ver en Google Maps</a>
+        </div>
+      </div>
+      <div class="loc">
+        <h3>Local 1 · Zona Hotelera</h3>
+        <p>Blvd. Kukulcán, Zona Hotelera, Cancún, Q.R. 77500. Frente al hotel Secrets The Vine.</p>
+        <div class="loc-meta">
+          <span>Lunes a domingo · 8:00 – 21:00</span>
+          <a href="tel:+529982460051">998 246 0051</a>
+          <a class="map-link" href="https://maps.google.com/?q=Bamboo+Hair+%26+Spa+Secrets+The+Vine+Cancun" target="_blank" rel="noopener">Ver en Google Maps</a>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ===== Trust strip ===== -->
-<div class="trust">
-  <div class="container trust-grid">
-    <div class="trust-item"><strong>#1</strong><span>Spa en Cancún · TripAdvisor</span></div>
-    <div class="trust-item"><strong>3</strong><span>Sucursales en la Zona Hotelera</span></div>
-    <div class="trust-item"><strong>8 a 22 h</strong><span>Abierto todos los días</span></div>
-    <div class="trust-item"><strong>4.7 ★</strong><span>475 reseñas en Google</span></div>
-  </div>
-</div>
-
-<!-- ===== Services ===== -->
-<section class="services" id="servicios">
-  <div class="container">
-    <div class="section-head">
-      <span class="section-tag">Servicios</span>
-      <h2>Todo para consentirte en un solo lugar</h2>
-      <p>Desde un masaje de pareja hasta un cambio de look completo. Servicios de spa y salón con productos de calidad.</p>
-    </div>
-    <div class="services-grid">
-      <div class="service-card">
-        <div class="service-icon"><svg viewBox="0 0 24 24"><path d="M7 13c2-2 8-2 10 0M5 17c3-3 11-3 14 0M9 9c1.5-1.5 4.5-1.5 6 0"/></svg></div>
-        <h3>Masajes</h3>
-        <p>Sueco, tejido profundo, piedras calientes y masaje en pareja. La especialidad de la casa.</p>
-      </div>
-      <div class="service-card">
-        <div class="service-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="9" r="4"/><path d="M5 21c0-4 3-6 7-6s7 2 7 6"/></svg></div>
-        <h3>Faciales</h3>
-        <p>Limpieza profunda, hidratación y tratamientos antiedad adaptados a tu tipo de piel.</p>
-      </div>
-      <div class="service-card">
-        <div class="service-icon"><svg viewBox="0 0 24 24"><path d="M4 14c2-1 4-1 6 0s4 1 6 0 4-1 4 0M4 18c2-1 4-1 6 0s4 1 6 0 4-1 4 0M8 10c0-3 2-5 4-5s4 2 4 5"/></svg></div>
-        <h3>Fish Therapy</h3>
-        <p>La experiencia única de exfoliación natural más buscada por nuestros visitantes.</p>
-      </div>
-      <div class="service-card">
-        <div class="service-icon"><svg viewBox="0 0 24 24"><path d="M6 4l4 4-4 4M14 4c3 0 5 2 5 5s-2 5-5 5M8 16l4 4 4-4"/></svg></div>
-        <h3>Salón de belleza</h3>
-        <p>Corte, peinado, color y tratamientos capilares con estilistas profesionales.</p>
-      </div>
-      <div class="service-card">
-        <div class="service-icon"><svg viewBox="0 0 24 24"><path d="M8 3v6c0 2 1 3 3 3h2c2 0 3-1 3-3V3M12 12v9"/></svg></div>
-        <h3>Manicure y pedicure</h3>
-        <p>Spa de manos y pies, acrílicas, gelish y pedicure deluxe con limpieza profunda.</p>
-      </div>
-      <div class="service-card">
-        <div class="service-icon"><svg viewBox="0 0 24 24"><path d="M12 3c-3 4-6 7-6 11a6 6 0 0 0 12 0c0-4-3-7-6-11z"/></svg></div>
-        <h3>Tratamientos corporales</h3>
-        <p>Envolturas, exfoliaciones y rituales corporales para renovar tu piel.</p>
-      </div>
-      <div class="service-card">
-        <div class="service-icon"><svg viewBox="0 0 24 24"><path d="M4 12h16M4 12c0-4 4-7 8-7s8 3 8 7M4 12c0 4 4 7 8 7s8-3 8-7"/></svg></div>
-        <h3>Depilación con cera</h3>
-        <p>Depilación profesional para todo tipo de piel, con cera de calidad premium.</p>
-      </div>
-      <div class="service-card">
-        <div class="service-icon"><svg viewBox="0 0 24 24"><path d="M12 4l2.5 5 5.5.8-4 3.9.9 5.5-4.9-2.6-4.9 2.6.9-5.5-4-3.9 5.5-.8z"/></svg></div>
-        <h3>Paquetes y bodas</h3>
-        <p>Paquetes especiales para parejas, grupos y novias. Tu día especial empieza aquí.</p>
-      </div>
+<!-- CTA final -->
+<section class="final">
+  <div class="wrap final-grid">
+    <h2>Tu masaje de hoy se reserva en un mensaje</h2>
+    <div>
+      <a href="https://wa.me/5219981202541" class="btn-dark">Escribir por WhatsApp</a>
+      <p class="final-sub">o llama al 998 883 0106</p>
     </div>
   </div>
 </section>
 
-<!-- ===== Gallery ===== -->
-<section class="gallery" id="galeria">
-  <div class="container">
-    <div class="section-head">
-      <span class="section-tag">Galería</span>
-      <h2>Un espacio diseñado para tu descanso</h2>
-    </div>
-    <div class="gallery-grid">
-      <img src="https://bamboo-spa-hair.com/wp-content/uploads/2019/03/spa-massage-720.jpg" alt="Sala de masajes Bamboo Spa" loading="lazy">
-      <img src="https://bamboo-spa-hair.com/wp-content/uploads/2019/03/heair-salon-spa.jpg" alt="Salón de belleza Bamboo" loading="lazy">
-      <img src="https://bamboo-spa-hair.com/wp-content/uploads/2019/03/hands-manicure.jpg" alt="Manicure profesional" loading="lazy">
-      <img src="https://bamboo-spa-hair.com/wp-content/uploads/2019/03/fondo-spa-3.jpg" alt="Ambiente relajante del spa" loading="lazy">
-      <img src="https://bamboo-spa-hair.com/wp-content/uploads/2019/03/hair-wedding-spa.jpg" alt="Peinado para bodas" loading="lazy">
-      <img src="https://bamboo-spa-hair.com/wp-content/uploads/2019/03/massage.jpg" alt="Masaje profesional en Cancún" loading="lazy">
-    </div>
-  </div>
-</section>
-
-<!-- ===== Team ===== -->
-<section class="team" id="equipo">
-  <div class="container">
-    <div class="section-head">
-      <span class="section-tag">Nuestro equipo</span>
-      <h2>Las manos que te van a consentir</h2>
-      <p>Terapeutas y estilistas mencionados una y otra vez en las reseñas de nuestros clientes.</p>
-    </div>
-    <div class="team-grid">
-      <div class="team-card"><div class="team-avatar">V</div><h3>Vivi</h3><p>Terapeuta de masaje</p></div>
-      <div class="team-card"><div class="team-avatar">J</div><h3>Jessica</h3><p>Terapeuta de masaje</p></div>
-      <div class="team-card"><div class="team-avatar">M</div><h3>Miriam</h3><p>Terapeuta de masaje</p></div>
-      <div class="team-card"><div class="team-avatar">A</div><h3>Abel</h3><p>Especialista en faciales</p></div>
-      <div class="team-card"><div class="team-avatar">K</div><h3>Katrina</h3><p>Técnica de uñas</p></div>
-      <div class="team-card"><div class="team-avatar">P</div><h3>Paty</h3><p>Pedicurista</p></div>
-    </div>
-  </div>
-</section>
-
-<!-- ===== Reviews ===== -->
-<section class="reviews">
-  <div class="container">
-    <div class="section-head">
-      <span class="section-tag">Reseñas reales</span>
-      <h2>Lo que dicen nuestros visitantes</h2>
-      <p>Reseñas verificadas de TripAdvisor, donde somos el spa mejor calificado de Cancún.</p>
-    </div>
-    <div class="reviews-grid">
-      <div class="review-card">
-        <div class="review-stars">★★★★★</div>
-        <blockquote>"Wonderful day was made even better after we got our couples massage! The place was very clean and the staff was kind and welcoming!"</blockquote>
-        <cite>Visitante · TripAdvisor</cite>
-      </div>
-      <div class="review-card">
-        <div class="review-stars">★★★★★</div>
-        <blockquote>"My favorite part of my experience was the facial. It was my first time and Abel did a wonderful job. I loved everything from massage to facial and fish therapy!"</blockquote>
-        <cite>Visitante · TripAdvisor</cite>
-      </div>
-      <div class="review-card">
-        <div class="review-stars">★★★★★</div>
-        <blockquote>"My nail technician, Katrina, did such a wonderful job on my acrylics. It was relaxing and really well done. 10/10 would recommend."</blockquote>
-        <cite>Visitante · TripAdvisor</cite>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ===== Locations ===== -->
-<section class="locations" id="sucursales">
-  <div class="container">
-    <div class="section-head">
-      <span class="section-tag">Sucursales</span>
-      <h2>Tres ubicaciones en la Zona Hotelera</h2>
-      <p>Siempre hay un Bamboo cerca de tu hotel.</p>
-    </div>
-    <div class="locations-grid">
-      <div class="location-card">
-        <h3>Plaza Terramar · Local 6</h3>
-        <p>Blvd. Kukulcán km 8.5, frente al Hotel Riu Palace Las Américas</p>
-        <p>Lunes a domingo: 8:00 - 22:00</p>
-        <a href="tel:+529988830106" class="loc-phone">998 883 0106</a>
-      </div>
-      <div class="location-card">
-        <h3>Plaza Terramar · Local 17</h3>
-        <p>Especializada en fish therapy y pedicure</p>
-        <p>Lunes a domingo: 8:00 - 22:00</p>
-        <a href="tel:+529988830486" class="loc-phone">998 883 0486</a>
-      </div>
-      <div class="location-card">
-        <h3>Local 1 · Zona Hotelera</h3>
-        <p>Frente al hotel Secrets The Vine</p>
-        <p>Lunes a domingo: 8:00 - 21:00</p>
-        <a href="tel:+529982460051" class="loc-phone">998 246 0051</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ===== Contact ===== -->
-<section class="contact" id="contacto">
-  <div class="container">
-    <div class="section-head">
-      <span class="section-tag">Contacto</span>
-      <h2>Reserva tu momento de relajación</h2>
-      <p>Escríbenos por WhatsApp o llámanos. Atendemos todos los días.</p>
-    </div>
-    <div class="contact-grid">
-      <div class="contact-card">
-        <h3>Teléfono</h3>
-        <a href="tel:+529988830106">998 883 0106</a>
-      </div>
-      <div class="contact-card">
-        <h3>WhatsApp</h3>
-        <a href="https://wa.me/5219981202541">998 120 2541</a>
-      </div>
-      <div class="contact-card">
-        <h3>Ubicación</h3>
-        <a href="https://maps.google.com/?q=Bamboo+Hair+%26+Spa+Plaza+Terramar+Cancun" target="_blank" rel="noopener">Plaza Terramar, Zona Hotelera</a>
-      </div>
-    </div>
-    <div class="contact-cta">
-      <a href="https://wa.me/5219981202541" class="btn-primary">Reservar ahora por WhatsApp</a>
-    </div>
-  </div>
-</section>
-
-<!-- ===== Footer ===== -->
 <footer>
-  <div class="container footer-grid">
-    <div class="footer-brand">
+  <div class="wrap foot">
+    <div class="foot-brand">
       <img src="https://bamboo-spa-hair.com/wp-content/uploads/2020/04/cropped-Logo-1-1-180x180.jpg" alt="Bamboo Hair & Spa">
-      <span>Bamboo Hair & Spa</span>
+      Bamboo Hair & Spa
     </div>
-    <p>Blvd. Kukulcán km 8.5, Plaza Terramar, Zona Hotelera, Cancún, Q.R. 77500</p>
-    <p>Preview por <a href="https://acidmkt.com" target="_blank" rel="noopener"><strong>ACID MKT</strong></a> · acidmkt.com</p>
+    <p>Blvd. Kukulcán km 8.5, Plaza Terramar, Zona Hotelera, Cancún · bamboo.cancun@gmail.com</p>
+    <p>Preview por <a href="https://acidmkt.com" target="_blank" rel="noopener">ACID MKT</a> · acidmkt.com</p>
   </div>
 </footer>
 
-<!-- ===== WhatsApp float ===== -->
-<a href="https://wa.me/5219981202541" class="wa-float" aria-label="Reservar por WhatsApp" target="_blank" rel="noopener">
+<a href="https://wa.me/5219981202541" class="wa" aria-label="Reservar por WhatsApp" target="_blank" rel="noopener">
   <svg viewBox="0 0 32 32"><path d="M16.001 3C9.373 3 4 8.373 4 15.001c0 2.367.692 4.572 1.882 6.43L4 29l7.78-1.838A11.95 11.95 0 0 0 16.001 27c6.627 0 12-5.373 12-12s-5.372-12-12-12zm0 21.998a9.94 9.94 0 0 1-5.082-1.392l-.364-.216-4.62 1.092 1.124-4.5-.237-.382A9.93 9.93 0 0 1 6 15.001 10 10 0 1 1 16.001 24.998zm5.494-7.456c-.301-.151-1.782-.879-2.058-.98-.275-.1-.476-.151-.677.151-.201.301-.776.98-.952 1.181-.175.201-.351.226-.652.075-.301-.151-1.272-.469-2.421-1.495-.895-.798-1.5-1.783-1.676-2.084-.176-.301-.018-.464.133-.615.137-.137.301-.351.452-.527.151-.176.201-.301.301-.502.1-.201.05-.376-.025-.527-.075-.151-.677-1.632-.927-2.234-.244-.586-.493-.508-.677-.517l-.578-.011a1.1 1.1 0 0 0-.803.376c-.276.301-1.053 1.029-1.053 2.51 0 1.482 1.077 2.913 1.227 3.114.151.201 2.121 3.238 5.142 4.541.719.31 1.279.495 1.716.633.721.229 1.378.197 1.897.12.579-.086 1.782-.728 2.034-1.432.252-.703.252-1.305.176-1.432-.075-.126-.276-.201-.577-.351z"/></svg>
 </a>
 
