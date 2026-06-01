@@ -1,30 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Bamboo Hair & Spa | Cancún's #1 Rated Spa on TripAdvisor · Hotel Zone</title>
-<meta name="description" content="Massages, fish therapy, hair salon, manicure and more. Cancún's highest-rated spa, with 3 locations in the Hotel Zone. Open every day from 8 am to 10 pm. Walk-ins welcome.">
-<link rel="canonical" href="https://acidmkt-bamboo-spa.vercel.app/">
-<link rel="alternate" hreflang="en" href="https://acidmkt-bamboo-spa.vercel.app/">
-<link rel="alternate" hreflang="es" href="https://acidmkt-bamboo-spa.vercel.app/es/">
-<link rel="alternate" hreflang="x-default" href="https://acidmkt-bamboo-spa.vercel.app/">
+<title>Bamboo Hair & Spa | El spa #1 de Cancún según TripAdvisor · Zona Hotelera</title>
+<meta name="description" content="Masajes, fish therapy, salón de belleza, manicure y más. El spa mejor calificado de Cancún, con 3 sucursales en la Zona Hotelera. Abierto todos los días de 8:00 a 22:00.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="canonical" href="https://acidmkt-bamboo-spa.vercel.app/es/">
+<link rel="alternate" hreflang="en" href="https://acidmkt-bamboo-spa.vercel.app/">
+<link rel="alternate" hreflang="es" href="https://acidmkt-bamboo-spa.vercel.app/es/">
+<link rel="alternate" hreflang="x-default" href="https://acidmkt-bamboo-spa.vercel.app/">
 <link rel="icon" href="https://bamboo-spa-hair.com/wp-content/uploads/2020/04/cropped-Logo-1-1-180x180.jpg">
 <style>
   :root {
-    --lime: oklch(0.78 0.16 122);          /* brand bamboo green */
+    --lime: oklch(0.78 0.16 122);          /* verde bambú de marca */
     --lime-bright: oklch(0.85 0.18 124);
-    --forest: oklch(0.42 0.1 145);          /* forest green from the logo */
+    --forest: oklch(0.42 0.1 145);          /* verde bosque del logo */
     --forest-deep: oklch(0.3 0.07 145);
-    --cream: oklch(0.98 0.01 120);          /* neutral tinted toward green */
+    --cream: oklch(0.98 0.01 120);          /* neutro entintado al verde */
     --sand: oklch(0.95 0.02 115);
     --ink: oklch(0.25 0.03 140);
     --ink-soft: oklch(0.45 0.03 140);
     --white: oklch(0.99 0.005 120);
-    --turquoise: oklch(0.75 0.12 200);      /* from the fish therapy water */
+    --turquoise: oklch(0.75 0.12 200);      /* del agua de fish therapy */
   }
   * { margin: 0; padding: 0; box-sizing: border-box; }
   html { scroll-behavior: smooth; }
@@ -100,13 +100,14 @@
   }
   .btn-ghost:hover { color: var(--lime-bright); }
 
-  /* ============ Stats strip: committed lime block ============ */
+  /* ============ Cinta de datos: bloque lima comprometido ============ */
   .strip { background: var(--lime); color: var(--ink); padding: clamp(28px, 4vh, 44px) 0; }
   .strip-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: clamp(20px, 3vw, 40px); }
+  .strip-item { border-left: none; }
   .strip-item strong { font-family: 'Bricolage Grotesque', sans-serif; font-size: clamp(1.9rem, 3.5vw, 2.8rem); font-weight: 800; display: block; line-height: 1; }
   .strip-item span { font-weight: 600; font-size: 0.95rem; color: oklch(0.35 0.06 140); }
 
-  /* ============ Services: asymmetric bento with real photos ============ */
+  /* ============ Servicios: bento asimétrico con fotos reales ============ */
   .services { padding: clamp(64px, 10vh, 120px) 0; }
   .services-head { display: flex; justify-content: space-between; align-items: flex-end; gap: 24px; flex-wrap: wrap; margin-bottom: clamp(36px, 5vh, 56px); }
   .services-head h2 { font-size: clamp(2.2rem, 5vw, 3.8rem); max-width: 16ch; }
@@ -146,7 +147,7 @@
   .tile-text li { padding: 5px 0; font-size: 0.98rem; color: oklch(0.9 0.03 130); }
   .tile-text li::before { content: "— "; color: var(--lime-bright); }
 
-  /* ============ Fish therapy: turquoise feature ============ */
+  /* ============ Fish therapy: feature turquesa ============ */
   .fish {
     position: relative; min-height: 70vh;
     display: flex; align-items: center;
@@ -161,7 +162,7 @@
   .fish p { font-size: 1.15rem; color: oklch(0.93 0.02 200); margin-bottom: 28px; }
   .fish .btn-lime { background: var(--cream); color: var(--ink); }
 
-  /* ============ Team + reviews combined ============ */
+  /* ============ Equipo + reseñas combinados ============ */
   .voces { padding: clamp(64px, 10vh, 120px) 0; background: var(--sand); }
   .voces-grid { display: grid; grid-template-columns: 5fr 7fr; gap: clamp(32px, 5vw, 72px); align-items: start; }
   .voces h2 { font-size: clamp(2.2rem, 4.5vw, 3.4rem); margin-bottom: 18px; }
@@ -181,7 +182,7 @@
   .review blockquote { font-size: 1.05rem; line-height: 1.55; }
   .review cite { display: block; margin-top: 14px; font-style: normal; font-weight: 600; font-size: 0.9rem; color: var(--ink-soft); }
 
-  /* ============ Locations: committed green block ============ */
+  /* ============ Sucursales: bloque verde comprometido ============ */
   .sucursales { background: var(--forest-deep); color: var(--cream); padding: clamp(64px, 10vh, 120px) 0; }
   .sucursales h2 { font-size: clamp(2.2rem, 5vw, 3.8rem); margin-bottom: 12px; }
   .sucursales > .wrap > p { color: oklch(0.85 0.04 130); font-size: 1.15rem; margin-bottom: clamp(36px, 5vh, 56px); max-width: 50ch; }
@@ -199,7 +200,7 @@
   .loc a:hover { color: var(--lime-bright); }
   .loc .map-link { font-size: 0.92rem; font-weight: 600; color: var(--lime-bright); text-decoration: underline; text-underline-offset: 3px; }
 
-  /* ============ Final CTA ============ */
+  /* ============ CTA final ============ */
   .final { background: var(--lime); color: var(--ink); padding: clamp(72px, 12vh, 140px) 0; text-align: left; }
   .final-grid { display: flex; justify-content: space-between; align-items: center; gap: 32px; flex-wrap: wrap; }
   .final h2 { font-size: clamp(2.4rem, 6vw, 4.5rem); max-width: 18ch; }
@@ -220,7 +221,7 @@
   footer a { color: var(--lime-bright); text-decoration: none; }
   footer a:hover { text-decoration: underline; }
 
-  /* ============ Floating WhatsApp ============ */
+  /* ============ WhatsApp flotante ============ */
   .wa {
     position: fixed; bottom: 24px; right: 24px; z-index: 99;
     width: 60px; height: 60px; border-radius: 50%;
@@ -260,126 +261,126 @@
 <header>
   <nav class="nav">
     <a href="#" class="nav-brand">
-      <img src="https://bamboo-spa-hair.com/wp-content/uploads/2020/04/cropped-Logo-1-1-180x180.jpg" alt="Bamboo Hair & Spa logo">
+      <img src="https://bamboo-spa-hair.com/wp-content/uploads/2020/04/cropped-Logo-1-1-180x180.jpg" alt="Logo de Bamboo Hair & Spa">
       <strong>Bamboo Hair & Spa</strong>
     </a>
     <ul class="nav-links" id="navLinks">
-      <li><a href="#services">Services</a></li>
+      <li><a href="#servicios">Servicios</a></li>
       <li><a href="#fish">Fish Therapy</a></li>
-      <li><a href="#team">Our Team</a></li>
-      <li><a href="#locations">Locations</a></li>
-      <li class="lang-switch"><a href="/" lang="en" aria-current="page"><strong>EN</strong></a><span> · </span><a href="/es/" lang="es">ES</a></li>
+      <li><a href="#equipo">Equipo</a></li>
+      <li><a href="#sucursales">Sucursales</a></li>
+      <li class="lang-switch"><a href="/" lang="en">EN</a><span> · </span><a href="/es/" lang="es" aria-current="page"><strong>ES</strong></a></li>
       <li><a href="tel:+529988830106" class="nav-cta">998 883 0106</a></li>
     </ul>
-    <button class="nav-toggle" id="navToggle" aria-label="Open menu">
+    <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">
       <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
     </button>
   </nav>
 </header>
 
-<!-- Hero: full-bleed real photo -->
+<!-- Hero: foto real a sangre completa -->
 <section class="hero">
   <div class="wrap hero-inner">
-    <div class="hero-rank">★ Cancún's #1 Spa on TripAdvisor</div>
-    <h1>Step out of your hotel.<br>Into <span class="lime">another world.</span></h1>
-    <p>Massages, fish therapy, hair salon and nails, just steps from your hotel in the Hotel Zone. Walk-ins welcome, every day from 8 am to 10 pm.</p>
+    <div class="hero-rank">★ Spa #1 de Cancún en TripAdvisor</div>
+    <h1>Sal de tu hotel.<br>Entra a <span class="lime">otro mundo.</span></h1>
+    <p>Masajes, fish therapy, salón de belleza y manicure a pasos de tu hotel en la Zona Hotelera. Sin cita, todos los días, de 8 de la mañana a 10 de la noche.</p>
     <div class="hero-actions">
-      <a href="https://wa.me/5219981202541" class="btn-lime">Book on WhatsApp</a>
-      <a href="#services" class="btn-ghost">See services</a>
+      <a href="https://wa.me/5219981202541" class="btn-lime">Reservar por WhatsApp</a>
+      <a href="#servicios" class="btn-ghost">Ver servicios</a>
     </div>
   </div>
 </section>
 
-<!-- Stats strip -->
+<!-- Cinta de datos -->
 <div class="strip">
   <div class="wrap strip-grid">
-    <div class="strip-item"><strong>#1</strong><span>rated spa in Cancún on TripAdvisor</span></div>
-    <div class="strip-item"><strong>4.7 ★</strong><span>475 Google reviews</span></div>
-    <div class="strip-item"><strong>3</strong><span>locations in the Hotel Zone</span></div>
-    <div class="strip-item"><strong>8 am–10 pm</strong><span>open every day</span></div>
+    <div class="strip-item"><strong>#1</strong><span>Spa de Cancún en TripAdvisor</span></div>
+    <div class="strip-item"><strong>4.7 ★</strong><span>475 reseñas en Google</span></div>
+    <div class="strip-item"><strong>3</strong><span>sucursales en la Zona Hotelera</span></div>
+    <div class="strip-item"><strong>8–22 h</strong><span>abierto todos los días</span></div>
   </div>
 </div>
 
-<!-- Services: bento with real photos -->
-<section class="services" id="services">
+<!-- Servicios: bento con fotos reales -->
+<section class="services" id="servicios">
   <div class="wrap">
     <div class="services-head">
-      <h2>What your body has been asking for</h2>
-      <p>Every service with professional products and the highest-rated team in the Hotel Zone.</p>
+      <h2>Lo que tu cuerpo te está pidiendo</h2>
+      <p>Todos los servicios con productos profesionales y el equipo mejor calificado de la zona.</p>
     </div>
     <div class="bento">
       <a href="https://wa.me/5219981202541" class="tile tile-1">
-        <img src="https://bamboo-spa-hair.com/wp-content/uploads/2019/03/massage.jpg" alt="Swedish massage with hot stones at Bamboo Spa Cancún">
+        <img src="https://bamboo-spa-hair.com/wp-content/uploads/2019/03/massage.jpg" alt="Masaje sueco con piedras calientes en Bamboo Spa Cancún">
         <div class="tile-label">
-          <h3>Massages</h3>
-          <p>Swedish · deep tissue · hot stones · couples</p>
+          <h3>Masajes</h3>
+          <p>Sueco · tejido profundo · piedras calientes · en pareja</p>
         </div>
       </a>
       <a href="https://wa.me/5219981202541" class="tile tile-2">
-        <img src="https://bamboo-spa-hair.com/wp-content/uploads/2019/03/heair-salon-spa.jpg" alt="Haircut and styling at Bamboo hair salon">
+        <img src="https://bamboo-spa-hair.com/wp-content/uploads/2019/03/heair-salon-spa.jpg" alt="Corte y peinado en el salón de belleza Bamboo">
         <div class="tile-label">
-          <h3>Hair Salon</h3>
-          <p>Cut · color · styling</p>
+          <h3>Salón de belleza</h3>
+          <p>Corte · color · peinado</p>
         </div>
       </a>
       <a href="https://wa.me/5219981202541" class="tile tile-3">
-        <img src="https://bamboo-spa-hair.com/wp-content/uploads/2019/03/hands-manicure.jpg" alt="Professional manicure with polish">
+        <img src="https://bamboo-spa-hair.com/wp-content/uploads/2019/03/hands-manicure.jpg" alt="Manicure profesional con esmaltado">
         <div class="tile-label">
-          <h3>Manicure & Pedicure</h3>
-          <p>Acrylics · gel polish · deluxe pedicure</p>
+          <h3>Manicure y pedicure</h3>
+          <p>Acrílicas · gelish · pedicure deluxe</p>
         </div>
       </a>
       <a href="https://wa.me/5219981202541" class="tile tile-4">
-        <img src="https://bamboo-spa-hair.com/wp-content/uploads/2019/03/hair-wedding-spa.jpg" alt="Bridal hair styling for a beach wedding">
+        <img src="https://bamboo-spa-hair.com/wp-content/uploads/2019/03/hair-wedding-spa.jpg" alt="Peinado de novia para boda en la playa">
         <div class="tile-label">
-          <h3>Weddings & Events</h3>
-          <p>Hair and makeup for your big day</p>
+          <h3>Bodas y eventos</h3>
+          <p>Peinado y maquillaje para tu día</p>
         </div>
       </a>
       <a href="https://wa.me/5219981202541" class="tile tile-5">
-        <img src="https://bamboo-spa-hair.com/wp-content/uploads/2020/03/waxing-CMYK-300-dpi.jpg" alt="Professional waxing with premium wax">
+        <img src="https://bamboo-spa-hair.com/wp-content/uploads/2020/03/waxing-CMYK-300-dpi.jpg" alt="Depilación profesional con cera premium">
         <div class="tile-label">
-          <h3>Waxing</h3>
-          <p>Premium wax for every skin type</p>
+          <h3>Depilación</h3>
+          <p>Cera premium para todo tipo de piel</p>
         </div>
       </a>
       <div class="tile tile-6 tile-text">
-        <h3>And also</h3>
+        <h3>Y además</h3>
         <ul>
-          <li>Hydrating and anti-aging facials</li>
-          <li>Body treatments</li>
-          <li>Scrubs and wraps</li>
-          <li>Group packages</li>
+          <li>Faciales hidratantes y antiedad</li>
+          <li>Tratamientos corporales</li>
+          <li>Exfoliaciones y envolturas</li>
+          <li>Paquetes para grupos</li>
         </ul>
       </div>
     </div>
   </div>
 </section>
 
-<!-- Fish therapy: the differentiator -->
+<!-- Fish therapy: el diferenciador -->
 <section class="fish" id="fish">
   <div class="wrap">
     <div class="fish-inner">
-      <p class="fish-kicker">The experience nobody else has</p>
+      <p class="fish-kicker">La experiencia que nadie más tiene</p>
       <h2>Fish Therapy</h2>
-      <p>Hundreds of garra rufa fish exfoliate your skin naturally while you relax. Our most-requested experience, with a dedicated location at Plaza Terramar.</p>
-      <a href="https://wa.me/5219981202541" class="btn-lime">I want to try it</a>
+      <p>Cientos de pececitos garra rufa exfolian tu piel de forma natural mientras te relajas. La experiencia más buscada por nuestros visitantes, con una sucursal dedicada en Plaza Terramar.</p>
+      <a href="https://wa.me/5219981202541" class="btn-lime">Quiero probarlo</a>
     </div>
   </div>
 </section>
 
-<!-- Team + real reviews -->
-<section class="voces" id="team">
+<!-- Equipo + reseñas reales -->
+<section class="voces" id="equipo">
   <div class="wrap voces-grid">
     <div class="voces-intro">
-      <h2>The hands behind the 5 stars</h2>
-      <p>Our visitors don't just come back: they come back asking for their therapist by name. These are the names that show up in review after review.</p>
+      <h2>Las manos detrás de las 5 estrellas</h2>
+      <p>Nuestros visitantes no solo regresan: regresan preguntando por su terapeuta. Estos son los nombres que se repiten en las reseñas.</p>
       <div class="equipo">
-        <div class="persona">Vivi <span>· massage</span></div>
-        <div class="persona">Jessica <span>· massage</span></div>
-        <div class="persona">Miriam <span>· massage</span></div>
-        <div class="persona">Abel <span>· facials</span></div>
-        <div class="persona">Katrina <span>· nails</span></div>
+        <div class="persona">Vivi <span>· masaje</span></div>
+        <div class="persona">Jessica <span>· masaje</span></div>
+        <div class="persona">Miriam <span>· masaje</span></div>
+        <div class="persona">Abel <span>· faciales</span></div>
+        <div class="persona">Katrina <span>· uñas</span></div>
         <div class="persona">Paty <span>· pedicure</span></div>
       </div>
     </div>
@@ -387,66 +388,66 @@
       <div class="review">
         <div class="stars">★★★★★</div>
         <blockquote>"Wonderful day was made even better after we got our couples massage! The place was very clean and the staff was kind and welcoming!"</blockquote>
-        <cite>Visitor · TripAdvisor (verified review)</cite>
+        <cite>Visitante · TripAdvisor (reseña verificada)</cite>
       </div>
       <div class="review">
         <div class="stars">★★★★★</div>
         <blockquote>"My favorite part of my experience was the facial. It was my first time and Abel did a wonderful job. I loved everything from massage to facial and fish therapy!"</blockquote>
-        <cite>Visitor · TripAdvisor (verified review)</cite>
+        <cite>Visitante · TripAdvisor (reseña verificada)</cite>
       </div>
       <div class="review">
         <div class="stars">★★★★★</div>
         <blockquote>"My nail technician, Katrina, did such a wonderful job on my acrylics. It was relaxing and really well done. 10/10 would recommend."</blockquote>
-        <cite>Visitor · TripAdvisor (verified review)</cite>
+        <cite>Visitante · TripAdvisor (reseña verificada)</cite>
       </div>
     </div>
   </div>
 </section>
 
-<!-- Locations -->
-<section class="sucursales" id="locations">
+<!-- Sucursales -->
+<section class="sucursales" id="sucursales">
   <div class="wrap">
-    <h2>Three doors to relaxation</h2>
-    <p>Whichever hotel you're staying at in the Hotel Zone, there's a Bamboo just steps away. No appointment needed.</p>
+    <h2>Tres puertas al descanso</h2>
+    <p>Estés en el hotel que estés en la Zona Hotelera, hay un Bamboo a unos pasos. Sin cita previa.</p>
     <div class="locs">
       <div class="loc">
         <h3>Plaza Terramar · Local 6</h3>
-        <p>Blvd. Kukulcán km 8.5, Hotel Zone, Cancún, Q.R. 77500. Across from Hotel Riu Palace Las Américas.</p>
+        <p>Blvd. Kukulcán km 8.5, Zona Hotelera, Cancún, Q.R. 77500. Frente al Hotel Riu Palace Las Américas.</p>
         <div class="loc-meta">
-          <span>Monday to Sunday · 8:00 am – 10:00 pm</span>
+          <span>Lunes a domingo · 8:00 – 22:00</span>
           <a href="tel:+529988830106">998 883 0106</a>
-          <a class="map-link" href="https://maps.google.com/?q=Bamboo+Hair+%26+Spa+Plaza+Terramar+Local+6+Cancun" target="_blank" rel="noopener">View on Google Maps</a>
+          <a class="map-link" href="https://maps.google.com/?q=Bamboo+Hair+%26+Spa+Plaza+Terramar+Local+6+Cancun" target="_blank" rel="noopener">Ver en Google Maps</a>
         </div>
       </div>
       <div class="loc">
         <h3>Plaza Terramar · Local 17</h3>
-        <p>Home of fish therapy and pedicures. A few steps from Local 6, same plaza.</p>
+        <p>La casa del fish therapy y pedicure. A unos metros del Local 6, misma plaza.</p>
         <div class="loc-meta">
-          <span>Monday to Sunday · 8:00 am – 10:00 pm</span>
+          <span>Lunes a domingo · 8:00 – 22:00</span>
           <a href="tel:+529988830486">998 883 0486</a>
-          <a class="map-link" href="https://maps.google.com/?q=Bamboo+Spa+Fish+Therapy+Plaza+Terramar+Cancun" target="_blank" rel="noopener">View on Google Maps</a>
+          <a class="map-link" href="https://maps.google.com/?q=Bamboo+Spa+Fish+Therapy+Plaza+Terramar+Cancun" target="_blank" rel="noopener">Ver en Google Maps</a>
         </div>
       </div>
       <div class="loc">
-        <h3>Local 1 · Hotel Zone</h3>
-        <p>Blvd. Kukulcán, Hotel Zone, Cancún, Q.R. 77500. Across from Secrets The Vine hotel.</p>
+        <h3>Local 1 · Zona Hotelera</h3>
+        <p>Blvd. Kukulcán, Zona Hotelera, Cancún, Q.R. 77500. Frente al hotel Secrets The Vine.</p>
         <div class="loc-meta">
-          <span>Monday to Sunday · 8:00 am – 9:00 pm</span>
+          <span>Lunes a domingo · 8:00 – 21:00</span>
           <a href="tel:+529982460051">998 246 0051</a>
-          <a class="map-link" href="https://maps.google.com/?q=Bamboo+Hair+%26+Spa+Secrets+The+Vine+Cancun" target="_blank" rel="noopener">View on Google Maps</a>
+          <a class="map-link" href="https://maps.google.com/?q=Bamboo+Hair+%26+Spa+Secrets+The+Vine+Cancun" target="_blank" rel="noopener">Ver en Google Maps</a>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- Final CTA -->
+<!-- CTA final -->
 <section class="final">
   <div class="wrap final-grid">
-    <h2>Today's massage is one message away</h2>
+    <h2>Tu masaje de hoy se reserva en un mensaje</h2>
     <div>
-      <a href="https://wa.me/5219981202541" class="btn-dark">Message us on WhatsApp</a>
-      <p class="final-sub">or call 998 883 0106</p>
+      <a href="https://wa.me/5219981202541" class="btn-dark">Escribir por WhatsApp</a>
+      <p class="final-sub">o llama al 998 883 0106</p>
     </div>
   </div>
 </section>
@@ -457,12 +458,12 @@
       <img src="https://bamboo-spa-hair.com/wp-content/uploads/2020/04/cropped-Logo-1-1-180x180.jpg" alt="Bamboo Hair & Spa">
       Bamboo Hair & Spa
     </div>
-    <p>Blvd. Kukulcán km 8.5, Plaza Terramar, Hotel Zone, Cancún · bamboo.cancun@gmail.com</p>
-    <p>Preview by <a href="https://acidmkt.com" target="_blank" rel="noopener">ACID MKT</a> · acidmkt.com</p>
+    <p>Blvd. Kukulcán km 8.5, Plaza Terramar, Zona Hotelera, Cancún · bamboo.cancun@gmail.com</p>
+    <p>Preview por <a href="https://acidmkt.com" target="_blank" rel="noopener">ACID MKT</a> · acidmkt.com</p>
   </div>
 </footer>
 
-<a href="https://wa.me/5219981202541" class="wa" aria-label="Book on WhatsApp" target="_blank" rel="noopener">
+<a href="https://wa.me/5219981202541" class="wa" aria-label="Reservar por WhatsApp" target="_blank" rel="noopener">
   <svg viewBox="0 0 32 32"><path d="M16.001 3C9.373 3 4 8.373 4 15.001c0 2.367.692 4.572 1.882 6.43L4 29l7.78-1.838A11.95 11.95 0 0 0 16.001 27c6.627 0 12-5.373 12-12s-5.372-12-12-12zm0 21.998a9.94 9.94 0 0 1-5.082-1.392l-.364-.216-4.62 1.092 1.124-4.5-.237-.382A9.93 9.93 0 0 1 6 15.001 10 10 0 1 1 16.001 24.998zm5.494-7.456c-.301-.151-1.782-.879-2.058-.98-.275-.1-.476-.151-.677.151-.201.301-.776.98-.952 1.181-.175.201-.351.226-.652.075-.301-.151-1.272-.469-2.421-1.495-.895-.798-1.5-1.783-1.676-2.084-.176-.301-.018-.464.133-.615.137-.137.301-.351.452-.527.151-.176.201-.301.301-.502.1-.201.05-.376-.025-.527-.075-.151-.677-1.632-.927-2.234-.244-.586-.493-.508-.677-.517l-.578-.011a1.1 1.1 0 0 0-.803.376c-.276.301-1.053 1.029-1.053 2.51 0 1.482 1.077 2.913 1.227 3.114.151.201 2.121 3.238 5.142 4.541.719.31 1.279.495 1.716.633.721.229 1.378.197 1.897.12.579-.086 1.782-.728 2.034-1.432.252-.703.252-1.305.176-1.432-.075-.126-.276-.201-.577-.351z"/></svg>
 </a>
 
